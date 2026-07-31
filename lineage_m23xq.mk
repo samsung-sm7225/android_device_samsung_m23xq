@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from r8q device
-$(call inherit-product, device/samsung/r8q/device.mk)
+# Inherit from m23xq device
+$(call inherit-product, device/samsung/m23xq/device.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -30,17 +30,17 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_r8q
-PRODUCT_DEVICE := r8q
+PRODUCT_NAME := lineage_m23xq
+PRODUCT_DEVICE := m23xq
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G780G
+PRODUCT_MODEL := SM-M236B
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="r8qxx-user 13 TP1A.220624.014 G780GXXSHEYJ1 release-keys" \
-    BuildFingerprint=samsung/r8qxx/r8q:11/RP1A.200720.012/G780GXXSHEYJ1:user/release-keys \
-    DeviceProduct=r8qxx \
-    SystemName=r8qxx
+    BuildDesc="m23xqxx-user 13 TP1A.220624.014 M236BXXSEEZB1 release-keys" \
+    BuildFingerprint=samsung/m23xqxx/m23xq:11/RP1A.200720.012/M236BXXSEEZB1:user/release-keys \
+    DeviceProduct=m23xqxx \
+    SystemName=m23xqxx

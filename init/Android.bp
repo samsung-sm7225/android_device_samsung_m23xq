@@ -4,8 +4,8 @@
 //
 
 prebuilt_etc {
-    name: "init.r8q.rc",
-    src: "init.r8q.rc",
+    name: "init.m23xq.rc",
+    src: "init.m23xq.rc",
     sub_dir: "init/hw",
     soc_specific: true,
 }

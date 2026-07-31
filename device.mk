@@ -19,7 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # call the common setup
-$(call inherit-product, device/samsung/sm8250-common/common.mk)
+$(call inherit-product, device/samsung/sm7225-common/common.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -36,9 +36,9 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     android.hardware.multi-sku.rc \
-    init.r8q.rc
+    init.m23xq.rc
 
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_samsung_r8q)
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_samsung_m23xq)
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -82,5 +82,5 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call soong_config_set,samsungUdfpsVars,udfps_zorder,0x20000000u)
 $(call soong_config_set,surfaceflinger,udfps_lib,//hardware/samsung/fingerprint:libudfps_extension.samsung)
 
-# Inherit r8q blobs
-$(call inherit-product, vendor/samsung/r8q/r8q-vendor.mk)
+# Inherit m23xq blobs
+$(call inherit-product, vendor/samsung/m23xq/m23xq-vendor.mk)

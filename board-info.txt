@@ -1,1 +1,1 @@
-require board=kona|r8q
+require board=lito|m23xq

@@ -5,9 +5,9 @@
 //
 
 cc_library_static {
-    name: "libinit_samsung_r8q",
+    name: "libinit_samsung_m23xq",
     srcs: [
-        "libinit_samsung_r8q.cpp",
+        "libinit_samsung_m23xq.cpp",
         "libinit_variant.cpp",
         "libinit_utils.cpp"
     ],

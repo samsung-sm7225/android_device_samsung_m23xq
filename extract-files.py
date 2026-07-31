@@ -17,7 +17,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'vendor/samsung/sm8250-common',
+    'vendor/samsung/sm7225-common',
     'vendor/qcom/opensource/display',
 ]
 
@@ -28,7 +28,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'r8q',
+    'm23xq',
     'samsung',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
@@ -37,6 +37,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'sm8250-common', module.vendor
+        module, 'sm7225-common', module.vendor
     )
     utils.run()

@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/r8q
+DEVICE_PATH := device/samsung/m23xq
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -23,17 +23,17 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 82694144
 BOARD_SUPER_PARTITION_SIZE := 10292822016
 
-include device/samsung/sm8250-common/BoardConfigCommon.mk
+include device/samsung/sm7225-common/BoardConfigCommon.mk
 
 # Display
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/samsung/r8q.config
-BOARD_NAME := SRPUB26A007
+TARGET_KERNEL_CONFIG += vendor/samsung/m23xq.config
+BOARD_NAME := lito
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := r8q
+TARGET_OTA_ASSERT_DEVICE := m23xq
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Properties
