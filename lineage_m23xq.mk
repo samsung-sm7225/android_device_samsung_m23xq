@@ -26,7 +26,7 @@ $(call inherit-product, device/samsung/m23xq/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
 
 ## Device identifier. This must come after all inclusions

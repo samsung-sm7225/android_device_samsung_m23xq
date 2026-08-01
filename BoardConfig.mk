@@ -26,7 +26,7 @@ BOARD_SUPER_PARTITION_SIZE := 10385096704
 include device/samsung/sm7225-common/BoardConfigCommon.mk
 
 # Display
-TARGET_SCREEN_DENSITY := 420
+TARGET_SCREEN_DENSITY := 450
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/samsung/m23xq.config
