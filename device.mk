@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    android.hardware.multi-sku.rc \
     init.m23xq.rc
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_samsung_m23xq)
@@ -43,14 +42,10 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_samsung_
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
-    android.hardware.nfc-service.sec-sku \
     com.android.nfc_extras \
     Tag
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nci-NXP_SN100U.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-sn110t.conf \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nci-SLSI.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-s3fwrn5.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf
 
@@ -61,11 +56,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
-
-# Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element-service.nxp \
-    android.hardware.secure_element-service.thales-sku
 
 # Sensors
 PRODUCT_PACKAGES += \

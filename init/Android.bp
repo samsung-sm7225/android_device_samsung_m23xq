@@ -9,10 +9,3 @@ prebuilt_etc {
     sub_dir: "init/hw",
     soc_specific: true,
 }
-
-prebuilt_etc {
-    name: "android.hardware.multi-sku.rc",
-    src: "android.hardware.multi-sku.rc",
-    sub_dir: "init/",
-    soc_specific: true,
-}
